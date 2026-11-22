@@ -26,7 +26,9 @@ jobs:
 
       - name: Rodar coletor
         env:
-          SECRETS_JSON: ${{ toJSON(secrets) }}
+          AWIN_FEEDLIST: ${{ secrets.AWIN_FEEDLIST }}
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
         run: python coletor/coletar.py
 
       - name: Salvar resultado
