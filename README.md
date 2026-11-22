@@ -18,12 +18,12 @@ Nunca coloque links de feed ou chaves no código: eles ficam só aqui.
 
 | Nome do segredo | O que colar |
 |---|---|
-| `AWIN_FEED_118977` | Link do feed da **Lauri Esporte** gerado no Create-a-Feed da Awin (CSV) |
-| `AWIN_FEED_<id da loja>` | Um por loja aprovada na Awin (o número é o ID da loja) |
+| `AWIN_FEEDLIST` | Link geral **"Download da Lista de Feed"** (Awin → Ferramentas → Crie um Feed, no topo da página). Com ele, **toda loja aprovada entra sozinha**. |
+| `AWIN_FEED_<id da loja>` | Opcional: link de feed avulso de uma loja, se precisar forçar uma específica |
 | `ML_CLIENT_ID` | Client ID do app em developers.mercadolivre.com.br |
 | `ML_CLIENT_SECRET` | Client Secret do mesmo app |
 
-Ao aprovar uma loja nova na Awin: crie o segredo `AWIN_FEED_<id>` e adicione a loja em `config/curadoria.json` → `awin.lojas`.
+Ao aprovar uma loja nova na Awin, ela entra sozinha pelo `AWIN_FEEDLIST`. Para mostrar benefícios dela nos posts (cupom, Pix, frete), adicione em `config/curadoria.json` → `awin.lojas`.
 
 ## Rodar na mão
 

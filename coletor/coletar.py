@@ -14,6 +14,7 @@ import gzip
 import io
 import json
 import os
+import re
 import statistics
 import sys
 import urllib.parse
@@ -44,7 +45,7 @@ def baixar(url: str, headers: dict | None = None, data: bytes | None = None, tim
 def num(v) -> float | None:
     if v is None:
         return None
-    s = str(v).strip().replace("R$", "").replace(" ", "")
+    s = re.sub(r"[^0-9,.]", "", str(v))
     if not s:
         return None
     if "," in s and "." in s:
@@ -121,7 +122,7 @@ def segredos() -> dict:
         except json.JSONDecodeError:
             pass
     for k, v in os.environ.items():
-        if k.startswith(("AWIN_FEED_", "ML_")):
+        if k.startswith(("AWIN_FEED", "ML_")):
             s.setdefault(k, v)
     return s
 
@@ -135,14 +136,62 @@ def ler_csv(bruto: bytes) -> list[dict]:
     return list(csv.DictReader(io.StringIO(texto), delimiter=delim))
 
 
+COLUNAS_AWIN = ("aw_deep_link,product_name,aw_product_id,merchant_product_id,merchant_image_url,"
+                 "aw_image_url,merchant_category,category_name,search_price,store_price,rrp_price,"
+                 "product_price_old,brand_name,merchant_deep_link,in_stock,merchant_id,merchant_name")
+
+
+def _col(linha: dict, *pedacos: str) -> str:
+    """Valor da primeira coluna cujo nome contém todos os pedaços (ignora maiúsculas)."""
+    for k, v in linha.items():
+        nome = (k or "").lower()
+        if all(p in nome for p in pedacos):
+            return (v or "").strip()
+    return ""
+
+
+def feeds_awin(cfg: dict, seg: dict) -> list[tuple[str, str, str]]:
+    """Lista (awinmid, nome da loja, url do feed) das lojas em que estamos inscritos.
+
+    1) AWIN_FEEDLIST: o link geral "Download da Lista de Feed" da Awin. Pega sozinho
+       toda loja aprovada (status de inscrição ativo) e troca as colunas pelas que usamos.
+    2) AWIN_FEED_<id>: link de feed avulso, se existir (tem prioridade para aquela loja).
+    """
+    feeds: dict[str, tuple[str, str]] = {}
+    lista = seg.get("AWIN_FEEDLIST")
+    if lista:
+        try:
+            for l in ler_csv(baixar(lista)):
+                mid = _col(l, "advertiser", "id")
+                status = _col(l, "membership").lower()
+                url = _col(l, "url")
+                idioma = _col(l, "language").lower()
+                if not (mid and url) or status not in ("active", "joined", "ativo", "inscrito"):
+                    continue
+                if idioma and not idioma.startswith(("pt", "portug")):
+                    continue
+                if "/datafeed/download/" in url:  # formato antigo (Create-a-Feed)
+                    if "/columns/" in url:
+                        url = re.sub(r"/columns/[^/]+/", f"/columns/{COLUNAS_AWIN}/", url)
+                    if "/compression/" not in url:
+                        url = url.rstrip("/") + "/compression/gzip/"
+                nome = _col(l, "advertiser", "name") or f"Awin {mid}"
+                feeds.setdefault(mid, (nome, url))
+            log(f"[awin] lista de feeds: {len(feeds)} loja(s) inscrita(s)")
+        except Exception as e:  # noqa: BLE001
+            log(f"[awin] falha ao ler a lista de feeds: {e}")
+    for chave, url in seg.items():
+        if chave.startswith("AWIN_FEED_") and url:
+            mid = chave.removeprefix("AWIN_FEED_")
+            feeds[mid] = (feeds.get(mid, (f"Awin {mid}", ""))[0], url)
+    return [(mid, nome, url) for mid, (nome, url) in feeds.items()]
+
+
 def coletar_awin(cfg: dict, seg: dict, hist: dict) -> list[dict]:
     ofertas = []
     aff = cfg["awin"]["affiliate_id"]
-    for chave, url in seg.items():
-        if not chave.startswith("AWIN_FEED_") or not url:
-            continue
-        mid = chave.removeprefix("AWIN_FEED_")
-        loja = cfg["awin"]["lojas"].get(mid, {"nome": f"Awin {mid}", "beneficio": ""})
+    for mid, nome_feed, url in feeds_awin(cfg, seg):
+        loja = cfg["awin"]["lojas"].get(mid, {"nome": nome_feed, "beneficio": ""})
         try:
             linhas = ler_csv(baixar(url, timeout=300))
         except Exception as e:  # noqa: BLE001
@@ -150,35 +199,46 @@ def coletar_awin(cfg: dict, seg: dict, hist: dict) -> list[dict]:
             continue
         log(f"[awin {mid}] {len(linhas)} produtos no feed")
         for p in linhas:
+            # aceita o formato antigo da Awin e o novo, baseado no Google Shopping
             nome = p.get("product_name") or p.get("title") or ""
             marca = p.get("brand_name") or p.get("brand") or ""
-            cat = " ".join(filter(None, [p.get("merchant_category"), p.get("category_name")]))
+            cat = " ".join(filter(None, [p.get("merchant_category"), p.get("category_name"),
+                                         p.get("product_type"), p.get("google_product_category")]))
             c = classificar(cfg, nome, marca, cat)
             if not c:
                 continue
-            estoque = (p.get("in_stock") or p.get("is_for_sale") or "1").strip().lower()
-            if estoque in ("0", "false", "no", "nao", "não"):
+            estoque = (p.get("in_stock") or p.get("availability") or "1").strip().lower()
+            if estoque in ("0", "false", "no", "nao", "não", "out of stock", "out_of_stock", "outofstock"):
                 continue
-            preco = num(p.get("search_price")) or num(p.get("store_price")) or num(p.get("display_price"))
+            venda = num(p.get("sale_price"))
+            cheio = num(p.get("price"))
+            preco = (num(p.get("search_price")) or num(p.get("store_price")) or venda or cheio
+                     or num(p.get("display_price")))
             if not preco:
                 continue
             tabela = max(filter(None, [num(p.get("rrp_price")), num(p.get("product_price_old")),
-                                       num(p.get("base_price"))]), default=None)
-            pid = p.get("aw_product_id") or p.get("merchant_product_id") or nome
+                                       num(p.get("base_price")), cheio if venda else None]), default=None)
+            pid = (p.get("aw_product_id") or p.get("merchant_product_id") or p.get("id")
+                   or p.get("item_group_id") or nome)
             k = f"awin:{mid}:{pid}"
             registrar(hist, k, preco, cfg["dias_historico"])
             ref, base = referencia(hist, k, tabela)
-            url_loja = p.get("merchant_deep_link") or ""
-            link = p.get("aw_deep_link") or (
-                f"https://www.awin1.com/cread.php?awinmid={mid}&awinaffid={aff}&ued="
-                + urllib.parse.quote(url_loja, safe=""))
+            url_loja = p.get("merchant_deep_link") or p.get("link") or ""
+            if p.get("aw_deep_link"):
+                link = p["aw_deep_link"]
+            elif "awin1.com" in url_loja:
+                link = url_loja
+            else:
+                link = (f"https://www.awin1.com/cread.php?awinmid={mid}&awinaffid={aff}&ued="
+                        + urllib.parse.quote(url_loja, safe=""))
             ofertas.append({
                 "id": k, "canal": "awin", "loja": loja["nome"], "beneficio_loja": loja.get("beneficio", ""),
                 "marca": c["marca"], "uso_sugerido": c["uso"], "produto": nome.strip(),
                 "preco": round(preco, 2), "preco_referencia": round(ref, 2) if ref else None,
                 "base_desconto": base, "url_produto": url_loja, "link_afiliado": link,
                 "link_pronto": True,
-                "imagem": p.get("merchant_image_url") or p.get("aw_image_url") or "",
+                "imagem": (p.get("merchant_image_url") or p.get("aw_image_url")
+                           or p.get("image_link") or ""),
                 "tamanhos": p.get("Fashion:size") or p.get("size") or "",
             })
     return ofertas
