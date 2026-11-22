@@ -317,6 +317,17 @@ def coletar_ml(cfg: dict, seg: dict, hist: dict) -> list[dict]:
 
 # ---------------------------------------------------------------- saída
 
+TAM_LETRA = ["PP", "P", "M", "G", "GG", "XG", "XGG", "EG", "EGG", "XS", "S", "L", "XL", "XXL", "U", "UN", "UNICO", "ÚNICO"]
+
+
+def ordem_tamanho(t: str):
+    u = t.upper()
+    if u in TAM_LETRA:
+        return (1, TAM_LETRA.index(u), u)
+    m = re.match(r"\d+(?:[.,]\d)?", t)
+    return (0, float(m.group().replace(",", ".")) if m else 0, t)
+
+
 def main():
     with open(CONFIG, encoding="utf-8") as f:
         cfg = json.load(f)
@@ -336,13 +347,44 @@ def main():
         if o["desconto_pct"] >= cfg["desconto_minimo_pct"]:
             boas.append(o)
 
-    # um item por produto/canal (o menor preço), ordenado por desconto
-    melhor = {}
+    # agrupa variações (tamanho) do mesmo modelo/cor pela página do produto:
+    # fica o menor preço, o nome comum e a lista de tamanhos
+    grupos = {}
     for o in boas:
-        k = (o["canal"], o["produto"].lower())
-        if k not in melhor or o["preco"] < melhor[k]["preco"]:
-            melhor[k] = o
-    final = sorted(melhor.values(), key=lambda o: -o["desconto_pct"])[: cfg["max_ofertas"]]
+        chave_url = (o.get("url_produto") or "").split("?")[0].lower()
+        k = (o["canal"], chave_url or o["produto"].lower())
+        grupos.setdefault(k, []).append(o)
+    final = []
+    for itens in grupos.values():
+        g = dict(min(itens, key=lambda o: o["preco"]))
+        tams = set()
+        if len(itens) > 1:
+            listas = [o["produto"].split() for o in itens]
+            comum = []
+            for col in zip(*listas):
+                if len(set(w.lower() for w in col)) > 1:
+                    break
+                comum.append(col[0])
+            if comum:
+                g["produto"] = " ".join(comum).rstrip(" -/")
+                tams = {" ".join(l[len(comum):]).strip("()") for l in listas} - {""}
+        elif chave_url:
+            # item único: tira o tamanho do fim do nome se ele não faz parte do endereço da página
+            partes = g["produto"].rsplit(" ", 1)
+            slug = re.split(r"[/-]", chave_url.rstrip("/").removesuffix("/p"))
+            if (len(partes) == 2 and partes[1].lower() not in slug
+                    and (re.fullmatch(r"\d{2}(?:[.,]5)?(?:/\d{2})?", partes[1])
+                         or partes[1].upper() in TAM_LETRA)):
+                g["produto"], t = partes
+                tams.add(t)
+        for o in itens:
+            for t in str(o.get("tamanhos") or "").replace(";", ",").split(","):
+                if t.strip():
+                    tams.add(t.strip())
+        g["tamanhos"] = ", ".join(sorted(tams, key=ordem_tamanho))
+        g["variacoes"] = len(itens)
+        final.append(g)
+    final = sorted(final, key=lambda o: -o["desconto_pct"])[: cfg["max_ofertas"]]
 
     with open(HIST, "w", encoding="utf-8") as f:
         json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
