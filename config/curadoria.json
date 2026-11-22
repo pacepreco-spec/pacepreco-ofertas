@@ -1,0 +1,64 @@
+{
+  "_sobre": "Configuração da curadoria da Pace & Preço. Edite marcas, modelos e lojas aqui. Segredos (links de feed, chaves) NUNCA entram neste arquivo: ficam em Settings > Secrets do GitHub.",
+  "desconto_minimo_pct": 20,
+  "max_ofertas": 30,
+  "dias_historico": 45,
+  "awin": {
+    "affiliate_id": "3164229",
+    "lojas": {
+      "118977": {"nome": "Lauri Esporte", "beneficio": "10% off no Pix; cupom LAURI10 (10% na primeira compra); frete grátis"}
+    }
+  },
+  "mercadolivre": {
+    "ativo": true,
+    "matt_word": "pp20261122165933248",
+    "matt_tool": "81089497",
+    "link_pronto_confirmado": false,
+    "somente_lojas_oficiais_ou_lider": true
+  },
+  "palavras_corrida": ["corrida", "running", "run ", "maratona", "trail", "trilha"],
+  "marcas": ["asics", "mizuno", "olympikus", "nike", "adidas", "new balance", "saucony", "hoka", "puma", "fila", "on", "garmin", "coros", "amazfit", "polar", "track&field", "track & field", "live!", "lupo"],
+  "excluir": ["infantil", "kids", "chuteira", "society", "futsal", "sandália", "chinelo", "bota", "slip on", "casual", "lifestyle", "skate"],
+  "modelos": [
+    {"marca": "asics", "termos": ["gel-cumulus", "cumulus"], "uso": "#rodagem"},
+    {"marca": "asics", "termos": ["gel-nimbus", "nimbus"], "uso": "#rodagem #longao"},
+    {"marca": "asics", "termos": ["novablast"], "uso": "#longao #rodagem"},
+    {"marca": "asics", "termos": ["gt-2000", "gt 2000"], "uso": "#estabilidade #rodagem"},
+    {"marca": "asics", "termos": ["kayano"], "uso": "#estabilidade #longao"},
+    {"marca": "asics", "termos": ["superblast"], "uso": "#longao #tiro"},
+    {"marca": "asics", "termos": ["magic speed"], "uso": "#tiro #prova"},
+    {"marca": "asics", "termos": ["metaspeed"], "uso": "#prova"},
+    {"marca": "asics", "termos": ["gel-excite", "excite"], "uso": "#iniciante"},
+    {"marca": "mizuno", "termos": ["wave rider"], "uso": "#rodagem"},
+    {"marca": "mizuno", "termos": ["wave sky"], "uso": "#rodagem #longao"},
+    {"marca": "mizuno", "termos": ["neo vista", "neo zen", "neo aura"], "uso": "#longao"},
+    {"marca": "mizuno", "termos": ["rebellion"], "uso": "#tiro #prova"},
+    {"marca": "olympikus", "termos": ["corre"], "uso": "#rodagem #iniciante"},
+    {"marca": "nike", "termos": ["pegasus"], "uso": "#rodagem"},
+    {"marca": "nike", "termos": ["vomero"], "uso": "#longao"},
+    {"marca": "nike", "termos": ["structure"], "uso": "#estabilidade"},
+    {"marca": "nike", "termos": ["winflo"], "uso": "#iniciante"},
+    {"marca": "nike", "termos": ["vaporfly", "alphafly", "zoom fly"], "uso": "#prova"},
+    {"marca": "adidas", "termos": ["supernova"], "uso": "#rodagem"},
+    {"marca": "adidas", "termos": ["adizero"], "uso": "#tiro #prova"},
+    {"marca": "new balance", "termos": ["1080", "880", "more v"], "uso": "#rodagem #longao"},
+    {"marca": "new balance", "termos": ["rebel", "sc elite", "fuelcell"], "uso": "#tiro #prova"},
+    {"marca": "hoka", "termos": ["clifton", "bondi", "mach", "arahi", "rincon"], "uso": "#rodagem"},
+    {"marca": "hoka", "termos": ["speedgoat"], "uso": "#trilha"},
+    {"marca": "saucony", "termos": ["ride", "triumph", "guide"], "uso": "#rodagem"},
+    {"marca": "saucony", "termos": ["endorphin"], "uso": "#tiro #prova"},
+    {"marca": "on", "termos": ["cloudsurfer", "cloudmonster", "cloudrunner", "cloudflow", "cloudswift", "cloudeclipse"], "uso": "#rodagem"},
+    {"marca": "puma", "termos": ["velocity nitro", "deviate nitro", "magnify nitro"], "uso": "#rodagem #tiro"},
+    {"marca": "fila", "termos": ["float maxxi", "racer"], "uso": "#rodagem #prova"},
+    {"marca": "garmin", "termos": ["forerunner"], "uso": "#relogio"},
+    {"marca": "coros", "termos": ["pace"], "uso": "#relogio"},
+    {"marca": "amazfit", "termos": ["active", "balance", "cheetah"], "uso": "#relogio"},
+    {"marca": "polar", "termos": ["pacer", "vantage"], "uso": "#relogio"}
+  ],
+  "buscas_mercadolivre": [
+    "asics gel cumulus", "asics gel nimbus", "asics novablast", "asics gt 2000",
+    "mizuno wave rider", "mizuno wave sky", "olympikus corre",
+    "nike pegasus", "nike vomero", "adidas supernova", "adidas adizero boston",
+    "new balance 1080", "hoka clifton", "garmin forerunner", "coros pace 3", "amazfit active"
+  ]
+}
