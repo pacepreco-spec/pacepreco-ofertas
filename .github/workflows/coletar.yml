@@ -2,8 +2,8 @@ name: Coletar ofertas
 
 on:
   schedule:
-    # 6h20, 11h20 e 17h20 de Brasília (UTC-3), 30 min antes de cada bloco do agente
-    - cron: "20 9,14,20 * * *"
+    # de hora em hora, das 5h07 às 20h07 de brasilia
+    - cron: "7 8-23 * * *"
   workflow_dispatch: {}
 
 permissions:
