@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-25T12:06-03:00",
- "total_analisado": 1695,
+ "gerado_em": "2026-11-25T13:16-03:00",
+ "total_analisado": 1692,
  "total_ofertas": 30,
  "ofertas": [
   {
@@ -327,25 +327,6 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:44442689467",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "#longao",
-   "produto": "Tênis Nike Zoom Vomero 5 Feminino",
-   "preco": 689.99,
-   "preco_referencia": 1299.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-zoom-vomero-5-feminino-058605.html?cor=58",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=44442689467&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/05860558_98f5b16e_4046_49f0_86fb_8fdd09954ba7_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 46.9,
-   "variacoes": 1
-  },
-  {
    "id": "awin:17652:43654353948",
    "canal": "awin",
    "loja": "Nike BR",
@@ -365,7 +346,7 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:45071528663",
+   "id": "awin:17652:44506664035",
    "canal": "awin",
    "loja": "Nike BR",
    "beneficio_loja": "",
@@ -375,10 +356,10 @@
    "preco": 799.99,
    "preco_referencia": 1499.99,
    "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-zoom-fly-6-feminino-058279.html?cor=55",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=45071528663&a=3164229&m=17652",
+   "url_produto": "https://www.nike.com.br/tenis-nike-zoom-fly-6-feminino-058279.html?cor=ND",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=44506664035&a=3164229&m=17652",
    "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/05827955_a16a176b_6569_4cb7_8857_9c0f496d8843_bgclean.jpg",
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/058279ND_d67a9e3f_c9b6_4f54_bda4_df55aaa28596_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 46.7,
    "variacoes": 4
@@ -571,6 +552,25 @@
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/110244ID_3d789e4c_f5f3_4c1d_85e5_524f53082502_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 43.8,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:43529364327",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Camisa Nike ACG Trail Dri-FIT UV Feminina",
+   "preco": 369.99,
+   "preco_referencia": 649.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/camisa-nike-acg-trail-dri-fit-feminina-026868.html?cor=ND",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=43529364327&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/026868ND_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 43.1,
    "variacoes": 1
   }
  ]
