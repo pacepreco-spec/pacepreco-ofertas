@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-24T20:50-03:00",
- "total_analisado": 1698,
+ "gerado_em": "2026-11-25T06:09-03:00",
+ "total_analisado": 1690,
  "total_ofertas": 30,
  "ofertas": [
   {
@@ -474,12 +474,12 @@
    "link_afiliado": "https://www.awin1.com/pclick.php?p=46566696381&a=3164229&m=118977",
    "link_pronto": true,
    "imagem": "https://images.yampi.me/assets/stores/lauri-esporte/uploads/images/tenis-on-running-cloudsurfer-max-feminino-azul-35-6afb34fc50a04-large.jpg",
-   "tamanhos": "35, 36, 38, 39, 40",
+   "tamanhos": "35, 36, 39, 40",
    "desconto_pct": 46.0,
-   "variacoes": 5
+   "variacoes": 4
   },
   {
-   "id": "awin:118977:46566696469",
+   "id": "awin:118977:46566696470",
    "canal": "awin",
    "loja": "Lauri Esporte",
    "beneficio_loja": "10% off no Pix; cupom LAURI10 (10% na primeira compra); frete grátis",
@@ -490,12 +490,12 @@
    "preco_referencia": 1399.0,
    "base_desconto": "preco_tabela_sem_historico",
    "url_produto": "https://www.lauriesporte.com.br/tenis-on-running-cloudmonster-2-feminino-blue/p",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=46566696469&a=3164229&m=118977",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=46566696470&a=3164229&m=118977",
    "link_pronto": true,
-   "imagem": "https://images.yampi.me/assets/stores/lauri-esporte/uploads/images/tenis-on-running-cloudmonster-2-feminino-azul-34-68f929dad0ac3-large.jpg",
-   "tamanhos": "34, 36",
+   "imagem": "https://images.yampi.me/assets/stores/lauri-esporte/uploads/images/tenis-on-running-cloudmonster-2-feminino-azul-36-6ad78b7b6a610-large.jpg",
+   "tamanhos": "36",
    "desconto_pct": 46.0,
-   "variacoes": 2
+   "variacoes": 1
   },
   {
    "id": "awin:17652:46323465748",
