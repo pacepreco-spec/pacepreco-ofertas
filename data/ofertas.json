@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-26T12:01-03:00",
- "total_analisado": 1682,
+ "gerado_em": "2026-11-26T13:05-03:00",
+ "total_analisado": 1683,
  "total_ofertas": 30,
  "ofertas": [
   {
@@ -191,6 +191,25 @@
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/097757P1_929d0a8e_738d_4695_81e3_1bbe377fc9e3_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 53.8,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:45501531611",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "#prova",
+   "produto": "Tênis Nike Zoom Fly 6 Masculino",
+   "preco": 719.99,
+   "preco_referencia": 1499.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/tenis-nike-zoom-fly-6-masculino-056330.html?cor=17",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=45501531611&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/05633017_16a3dae6_3869_4aba_8ad9_3733cbbc1663_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 52.0,
    "variacoes": 1
   },
   {
@@ -403,6 +422,25 @@
    "variacoes": 1
   },
   {
+   "id": "awin:17652:46531617422",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Tênis Nike Journey Run Feminino",
+   "preco": 379.99,
+   "preco_referencia": 699.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/tenis-nike-journey-run-feminino-028667.html?cor=A1",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=46531617422&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/028667A1_011a6fed_c328_4112_bb96_33da12468c02_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 45.7,
+   "variacoes": 6
+  },
+  {
    "id": "awin:17652:46323465748",
    "canal": "awin",
    "loja": "Nike BR",
@@ -420,25 +458,6 @@
    "tamanhos": "",
    "desconto_pct": 45.7,
    "variacoes": 4
-  },
-  {
-   "id": "awin:17652:44912269760",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Tênis Nike Journey Run Feminino",
-   "preco": 379.99,
-   "preco_referencia": 699.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-journey-run-feminino-028667.html?cor=5H",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=44912269760&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/0286675H_cd67fce3_233c_4f67_a040_ade0c3e867d4_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 45.7,
-   "variacoes": 6
   },
   {
    "id": "awin:17652:45225286733",
@@ -498,25 +517,6 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:45279127846",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Tênis Nike Journey Run Print Feminino",
-   "preco": 449.99,
-   "preco_referencia": 799.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-journey-run-print-feminino-110244.html?cor=ID",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=45279127846&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/110244ID_3d789e4c_f5f3_4c1d_85e5_524f53082502_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 43.8,
-   "variacoes": 1
-  },
-  {
    "id": "awin:17652:43930739223",
    "canal": "awin",
    "loja": "Nike BR",
@@ -531,6 +531,25 @@
    "link_afiliado": "https://www.awin1.com/pclick.php?p=43930739223&a=3164229&m=17652",
    "link_pronto": true,
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/09571815_83c55a36_3152_41dc_94f9_39a21be42b50_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 43.8,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:45279127846",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Tênis Nike Journey Run Print Feminino",
+   "preco": 449.99,
+   "preco_referencia": 799.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/tenis-nike-journey-run-print-feminino-110244.html?cor=ID",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=45279127846&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/110244ID_3d789e4c_f5f3_4c1d_85e5_524f53082502_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 43.8,
    "variacoes": 1
@@ -553,25 +572,6 @@
    "tamanhos": "",
    "desconto_pct": 43.5,
    "variacoes": 7
-  },
-  {
-   "id": "awin:17652:44618463668",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Jaqueta Dri-FIT Nike Swift Running Feminina",
-   "preco": 329.99,
-   "preco_referencia": 579.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/jaqueta-dri-fit-nike-swift-running-feminina-059310.html?cor=IE",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=44618463668&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/059310IE_1c53bdaf_7137_4c49_899c_a578677ea6f8_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 43.1,
-   "variacoes": 1
   }
  ]
 }
