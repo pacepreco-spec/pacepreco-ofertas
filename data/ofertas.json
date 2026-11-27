@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-27T11:56-03:00",
- "total_analisado": 1667,
+ "gerado_em": "2026-11-27T13:02-03:00",
+ "total_analisado": 1658,
  "total_ofertas": 30,
  "ofertas": [
   {
@@ -80,25 +80,6 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:43680243711",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Shorts Nike Trail Repel Feminino",
-   "preco": 179.99,
-   "preco_referencia": 499.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/shorts-nike-trail-repel-feminino-024888.html?cor=MT",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=43680243711&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/024888MT_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 64.0,
-   "variacoes": 1
-  },
-  {
    "id": "awin:17652:45366196155",
    "canal": "awin",
    "loja": "Nike BR",
@@ -116,6 +97,25 @@
    "tamanhos": "",
    "desconto_pct": 64.0,
    "variacoes": 5
+  },
+  {
+   "id": "awin:17652:43680243711",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Shorts Nike Trail Repel Feminino",
+   "preco": 179.99,
+   "preco_referencia": 499.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/shorts-nike-trail-repel-feminino-024888.html?cor=MT",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=43680243711&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/024888MT_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 64.0,
+   "variacoes": 1
   },
   {
    "id": "awin:17652:43229533489",
@@ -156,25 +156,6 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:45689522358",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Camiseta Dri-FIT Nike Run DNA 2 Masculina",
-   "preco": 69.99,
-   "preco_referencia": 179.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/camiseta-dri-fit-nike-run-dna-2-masculina-106540.html?cor=IF",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=45689522358&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/106540IF_3163ff5e_1f22_4264_9447_aa426177b8f2_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 61.1,
-   "variacoes": 3
-  },
-  {
    "id": "awin:17652:41305632381",
    "canal": "awin",
    "loja": "Nike BR",
@@ -213,6 +194,25 @@
    "variacoes": 5
   },
   {
+   "id": "awin:17652:46373237109",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Camiseta Dri-FIT Nike Run DNA 2 Masculina",
+   "preco": 73.25,
+   "preco_referencia": 179.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/camiseta-dri-fit-nike-run-dna-2-masculina-106540.html?cor=ID",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=46373237109&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/106540ID_4517d7c2_1f20_454e_b698_6c7094ff97cc_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 59.3,
+   "variacoes": 2
+  },
+  {
    "id": "awin:17652:40973062464",
    "canal": "awin",
    "loja": "Nike BR",
@@ -249,25 +249,6 @@
    "tamanhos": "",
    "desconto_pct": 59.1,
    "variacoes": 2
-  },
-  {
-   "id": "awin:17652:45501531614",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "#rodagem",
-   "produto": "Tênis Nike ACG Pegasus Trail GTX Masculino",
-   "preco": 599.99,
-   "preco_referencia": 1399.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-acg-pegasus-trail-gtx-masculino-104901.html?cor=ID",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=45501531614&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/104901ID_d7cd1ede_f909_4b7d_9983_97d855db917f_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 57.1,
-   "variacoes": 1
   },
   {
    "id": "awin:17652:38185978996",
@@ -460,25 +441,6 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:41927383854",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Blusão Dri-FIT Nike Run Swoosh Fleece Masculino",
-   "preco": 225.0,
-   "preco_referencia": 499.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/m-nk-df-rn-swoosh-flc-crew-075428.html?cor=7T",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=41927383854&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/0754287T_ee624639_f659_4b4b_8f5b_07037469f241_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 55.0,
-   "variacoes": 1
-  },
-  {
    "id": "awin:17652:44324128095",
    "canal": "awin",
    "loja": "Nike BR",
@@ -493,6 +455,25 @@
    "link_afiliado": "https://www.awin1.com/pclick.php?p=44324128095&a=3164229&m=17652",
    "link_pronto": true,
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/029694NX_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 55.0,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:41927383854",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Blusão Dri-FIT Nike Run Swoosh Fleece Masculino",
+   "preco": 225.0,
+   "preco_referencia": 499.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/m-nk-df-rn-swoosh-flc-crew-075428.html?cor=7T",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=41927383854&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/0754287T_ee624639_f659_4b4b_8f5b_07037469f241_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 55.0,
    "variacoes": 1
@@ -571,6 +552,25 @@
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/097757P1_929d0a8e_738d_4695_81e3_1bbe377fc9e3_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 53.8,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:37625283781",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Regata Nike Dri-FIT Trail Running Feminina",
+   "preco": 153.0,
+   "preco_referencia": 329.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/regata-nike-dri-fit-grx-feminina-028316.html?cor=15",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=37625283781&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/02831615_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 53.6,
    "variacoes": 1
   }
  ]
