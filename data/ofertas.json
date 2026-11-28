@@ -1,6 +1,6 @@
 {
- "gerado_em": "2026-11-28T07:53-03:00",
- "total_analisado": 1634,
+ "gerado_em": "2026-11-28T08:50-03:00",
+ "total_analisado": 1635,
  "total_ofertas": 30,
  "ofertas": [
   {
@@ -61,6 +61,25 @@
    "variacoes": 3
   },
   {
+   "id": "awin:17652:45689522358",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Camiseta Dri-FIT Nike Run DNA 2 Masculina",
+   "preco": 69.99,
+   "preco_referencia": 179.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/camiseta-dri-fit-nike-run-dna-2-masculina-106540.html?cor=IF",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=45689522358&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/106540IF_3163ff5e_1f22_4264_9447_aa426177b8f2_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 61.1,
+   "variacoes": 3
+  },
+  {
    "id": "awin:17652:44506664035",
    "canal": "awin",
    "loja": "Nike BR",
@@ -78,25 +97,6 @@
    "tamanhos": "",
    "desconto_pct": 60.0,
    "variacoes": 3
-  },
-  {
-   "id": "awin:17652:46373237109",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Camiseta Dri-FIT Nike Run DNA 2 Masculina",
-   "preco": 73.25,
-   "preco_referencia": 179.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/camiseta-dri-fit-nike-run-dna-2-masculina-106540.html?cor=ID",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=46373237109&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/106540ID_4517d7c2_1f20_454e_b698_6c7094ff97cc_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 59.3,
-   "variacoes": 2
   },
   {
    "id": "awin:17652:40973062464",
@@ -137,25 +137,6 @@
    "variacoes": 1
   },
   {
-   "id": "awin:17652:46007859132",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "#iniciante",
-   "produto": "Tênis Nike Winflo 11 Masculino",
-   "preco": 299.99,
-   "preco_referencia": 699.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-winflo-11-masculino-028658.html?cor=ID",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=46007859132&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/028658ID_f25556dc_14af_45a0_961f_eb54215b5540_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 57.1,
-   "variacoes": 2
-  },
-  {
    "id": "awin:17652:38185978996",
    "canal": "awin",
    "loja": "Nike BR",
@@ -170,6 +151,25 @@
    "link_afiliado": "https://www.awin1.com/pclick.php?p=38185978996&a=3164229&m=17652",
    "link_pronto": true,
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/028665ID_325d36be_5f94_4a42_8a10_c04f03846420_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 57.1,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:45396741751",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "#iniciante",
+   "produto": "Tênis Nike Winflo 11 Masculino",
+   "preco": 299.99,
+   "preco_referencia": 699.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/tenis-nike-winflo-11-masculino-028658.html?cor=IE",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=45396741751&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/028658IE_0db2861b_2762_46ab_b742_a5b7d82c5b4f_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 57.1,
    "variacoes": 1
@@ -384,7 +384,7 @@
    "variacoes": 4
   },
   {
-   "id": "awin:17652:46434383626",
+   "id": "awin:17652:46434383628",
    "canal": "awin",
    "loja": "Nike BR",
    "beneficio_loja": "",
@@ -394,10 +394,10 @@
    "preco": 899.99,
    "preco_referencia": 1799.99,
    "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/tenis-nike-pegasus-premium-masculino-030034.html?cor=IO",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=46434383626&a=3164229&m=17652",
+   "url_produto": "https://www.nike.com.br/tenis-nike-pegasus-premium-masculino-030034.html?cor=7U",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=46434383628&a=3164229&m=17652",
    "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/030034IO_a58a7bf2_4898_46dc_a405_f74774c27719_bgclean.jpg",
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/0300347U_f83af2a6_ef08_4ac1_9a32_094a818ec7f4_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 50.0,
    "variacoes": 3
@@ -517,25 +517,6 @@
    "variacoes": 3
   },
   {
-   "id": "awin:17652:46245900350",
-   "canal": "awin",
-   "loja": "Nike BR",
-   "beneficio_loja": "",
-   "marca": "nike",
-   "uso_sugerido": "",
-   "produto": "Camiseta Dri-FIT Nike Run DNA Masculina",
-   "preco": 79.99,
-   "preco_referencia": 149.99,
-   "base_desconto": "preco_tabela_sem_historico",
-   "url_produto": "https://www.nike.com.br/camiseta-dri-fit-nike-run-dna-masculina-110146.html?cor=51",
-   "link_afiliado": "https://www.awin1.com/pclick.php?p=46245900350&a=3164229&m=17652",
-   "link_pronto": true,
-   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/11014651_25712a7d_671d_4eb0_806a_f385a4bf1755_bgclean.jpg",
-   "tamanhos": "",
-   "desconto_pct": 46.7,
-   "variacoes": 1
-  },
-  {
    "id": "awin:17652:43655608730",
    "canal": "awin",
    "loja": "Nike BR",
@@ -550,6 +531,25 @@
    "link_afiliado": "https://www.awin1.com/pclick.php?p=43655608730&a=3164229&m=17652",
    "link_pronto": true,
    "imagem": "https://imgnike-a.akamaihd.net/1500x1500/096313ID_c6e8ea22_5e32_4e20_8534_2f48f5e44f3a_bgclean.jpg",
+   "tamanhos": "",
+   "desconto_pct": 46.7,
+   "variacoes": 1
+  },
+  {
+   "id": "awin:17652:46245900350",
+   "canal": "awin",
+   "loja": "Nike BR",
+   "beneficio_loja": "",
+   "marca": "nike",
+   "uso_sugerido": "",
+   "produto": "Camiseta Dri-FIT Nike Run DNA Masculina",
+   "preco": 79.99,
+   "preco_referencia": 149.99,
+   "base_desconto": "preco_tabela_sem_historico",
+   "url_produto": "https://www.nike.com.br/camiseta-dri-fit-nike-run-dna-masculina-110146.html?cor=51",
+   "link_afiliado": "https://www.awin1.com/pclick.php?p=46245900350&a=3164229&m=17652",
+   "link_pronto": true,
+   "imagem": "https://imgnike-a.akamaihd.net/1500x1500/11014651_25712a7d_671d_4eb0_806a_f385a4bf1755_bgclean.jpg",
    "tamanhos": "",
    "desconto_pct": 46.7,
    "variacoes": 1
